@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta
+      name="description"
+      content="All over the country people are taking the HOUR OF CODE challenge issued by CODE.ORG. 
+    Millions of lines of code are being written. In the capital of Florida, Tallahassee, 
+    the community is ..."
+    />
+    <meta name="author" content="Corentin THIERRY" />
+
+    <title>One Million Lines</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://fonts.googleapis.com/css?family=Arvo"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome/css/font-awesome.min.css"
+    />
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <nav>
+      <img src="images/top-logo.png" alt="Logo ONEMILLIONLINES_" />
+      <a id="who_link" href="#who">Who We Are</a>
+      <a id="get-involved_link" href="#get-involved">Get Involved</a>
+      <div id="burger-menu" onclick="menu()">
+        <span id="burger-menu-lg" class="fa fa-stack fa-lg">
+          <i
+            id="bars-icon"
+            class="fa fa-solid fa-bars fa-stack-lg fa-inverse"
+            style="display: inline-block"
+          ></i>
+          <i
+            id="close-icon"
+            class="fa fa-solid fa-close fa-stack-lg fa-inverse"
+            style="display: none"
+          ></i>
+        </span>
+      </div>
+      <div id="mobile-menu" style="top: -500px">
+        <a id="who-link-menu" href="#who" onclick="menu()"> ■ Who We Are</a>
+        <a id="get-involved-link-menu" href="#get-involved" onclick="menu()">
+          ■ Get Involved</a
+        >
+      </div>
+    </nav>
+
+    <div id="home">
+      <h1>
+        Our goal is to inspire Tallahassee to write 1,000,000 lines of code_
+      </h1>
+      <p>
+        All over the country people are taking the
+        <b class="b_of_p_home">hour of code</b> challenge issued by
+        <b class="b_of_p_home">CODE.org.</b>
+        Millions of lines of code are being written. In the capital of Florida,
+        Tallahassee, the community is taking the challenge and our goal is to
+        write 1,000,000 lines of code_
+      </p>
+      <button>Learn more »</button>
+      <img src="images/code.png" alt="Logo Code" />
+    </div>
+
+    <section id="who">
+      <img src="images/academy-brand-med.png" alt="Academy Brand Med Image" />
+      <h2>WHO WE ARE</h2>
+      <hr />
+      <p>
+        We are <b><span>massive</span> Academy</b>. We aim to improve education
+        through both method - effective project-based learning - and material -
+        by teaching skills that are applicable to improving your life today.
+      </p>
+    </section>
+    <!-- /#who -->
+
+    <section id="get-involved">
+      <h2>GET INVOLVED</h2>
+      <hr />
+
+      <div>
+        <article id="students">
+          <span class="fa fa-stack fa-3x">
+            <i class="fa fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa fa-solid fa-user fa-stack-1x fa-inverse"></i>
+          </span>
+          <h2>STUDENTS</h2>
+          <p>
+            Want to learn how to code? Want to help us get to 1,000,000 lines?
+            Click the button below and we'll let you know how to get involved
+          </p>
+          <button>Start Learning »</button>
+        </article>
+        <article id="educators">
+          <span class="fa fa-stack fa-3x">
+            <i class="fa fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa fa-solid fa-pencil fa-stack-1x fa-inverse"></i>
+          </span>
+          <h2>EDUCATORS</h2>
+          <p>
+            Want to bring this initiative to your school or institution?
+            Awesome! Click the button below and we'll make it happen.
+          </p>
+          <button>Join The Initiative »</button>
+        </article>
+
+        <article id="sponsors">
+          <span class="fa fa-stack fa-3x">
+            <i class="fa fa-solid fa-circle fa-stack-2x"></i>
+            <i class="fa fa-solid fa-money fa-stack-1x fa-inverse"></i>
+          </span>
+          <h2>SPONSORS</h2>
+          <p>
+            We love all the support we get to help host more events, and empower
+            more lives with the knowledge of coding. Click to get involved.
+          </p>
+          <button>Give Support »</button>
+        </article>
+      </div>
+    </section>
+    <!-- /#get-involved -->
+
+    <footer>
+      <img
+        src="images/one-million-bottom-brand.png"
+        alt="One Million Lines Footer Logo"
+      />
+    </footer>
+
+    <div id="back-to-top">
+      <a href="#home"
+        ><span class="fa fa-stack fa-lg">
+          <i class="fa fa-solid fa-chevron-circle-up fa-stack-2x"></i> </span
+      ></a>
+    </div>
+    <!-- /#back-to-top -->
+    <script>
+      function menu() {
+        console.log(document.getElementById("burger-icon"));
+
+        // Variable declaration
+        var styleTopMenu = document.getElementById("mobile-menu");
+        var styleDisplayBars = document.getElementById("bars-icon");
+        var styleDisplayClose = document.getElementById("close-icon");
+
+        // Menu Logic
+        if (styleTopMenu.style.top != "60px") {
+          styleTopMenu.style.top = "60px";
+          styleDisplayBars.style.display = "none";
+          styleDisplayClose.style.display = "inline-block";
+        } else {
+          styleTopMenu.style.top = "-500px";
+          styleDisplayBars.style.display = "inline-block";
+          styleDisplayClose.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
